@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Tracking | Meylla Bookstore</title><link rel="stylesheet" href="css/style.css"><script src="js/data.js" defer></script><script src="js/script.js" defer></script></head>
+<body>
+<header class="topbar"><a class="brand brand-dark" href="dashboard.html"><span class="brand-icon">M</span><span>Meylla <b>Bookstore</b></span></a><nav><a href="dashboard.html">Dashboard</a><a href="stok.html">Katalog</a><a href="checkout.html">Pemesanan</a><a class="active" href="tracking.html">Pengiriman</a></nav><button class="btn btn-outline btn-small" data-logout>Keluar</button></header>
+<main class="container tracking-main">
+  <section class="tracking-hero"><span class="eyebrow">LACAK PESANANMU</span><h1>Buku favoritmu sedang menuju rumah.</h1><p>Masukkan nomor Delivery Order untuk melihat informasi pengiriman.</p>
+    <form id="trackingForm" class="tracking-search"><input id="doNumber" required placeholder="Contoh: DO-MEYLLA-001"><button class="btn btn-primary">Cari Pesanan</button></form>
+    <small>Contoh nomor demo: <b>DO-MEYLLA-001</b></small>
+  </section>
+  <section id="trackingResult" class="form-card tracking-result hidden" aria-live="polite"></section>
+</main><footer class="footer">© 2026 Meylla Bookstore</footer></body></html>

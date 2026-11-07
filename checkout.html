@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Pemesanan | Meylla Bookstore</title><link rel="stylesheet" href="css/style.css"><script src="js/data.js" defer></script><script src="js/script.js" defer></script></head>
+<body>
+<header class="topbar"><a class="brand brand-dark" href="dashboard.html"><span class="brand-icon">M</span><span>Meylla <b>Bookstore</b></span></a><nav><a href="dashboard.html">Dashboard</a><a href="stok.html">Katalog</a><a class="active" href="checkout.html">Pemesanan</a><a href="tracking.html">Pengiriman</a></nav><button class="btn btn-outline btn-small" data-logout>Keluar</button></header>
+<main class="container">
+  <div class="page-title"><div><span class="eyebrow">CHECKOUT</span><h1>Pemesanan Buku</h1><p class="muted">Periksa pesanan dan lengkapi data pemesan.</p></div><a class="btn btn-outline" href="stok.html">← Kembali ke katalog</a></div>
+  <div class="checkout-layout"><section class="form-card"><h2>Informasi Pemesan</h2><form id="checkoutForm">
+    <label>Nama Lengkap</label><input id="customerName" required placeholder="Nama pemesan">
+    <label>Email</label><input id="customerEmail" type="email" required placeholder="nama@email.com">
+    <label>Alamat Pengiriman</label><textarea id="customerAddress" rows="3" required placeholder="Alamat lengkap"></textarea>
+    <label>Metode Pembayaran</label><select id="paymentMethod" required><option value="">Pilih metode pembayaran</option><option>Transfer Bank</option><option>COD (Bayar di Tempat)</option><option>E-Wallet</option></select>
+    <label>Catatan (opsional)</label><textarea id="orderNote" rows="2" placeholder="Catatan untuk penjual"></textarea>
+    <button class="btn btn-primary full" type="submit">Buat Pesanan</button>
+  </form></section>
+  <aside class="form-card order-card"><h2>Ringkasan Pesanan</h2><div id="cartItems"></div><div class="total-line"><span>Total pembayaran</span><b id="cartTotal">Rp0</b></div><p class="muted tiny">Gunakan tombol + dan − untuk mengubah jumlah buku.</p></aside></div>
+  <section class="form-card history-card" id="history"><div class="section-heading"><div><span class="eyebrow">RIWAYAT</span><h2>History Transaksi</h2></div></div><div id="historyList" class="table-wrap"></div></section>
+</main><footer class="footer">© 2026 Meylla Bookstore</footer></body></html>

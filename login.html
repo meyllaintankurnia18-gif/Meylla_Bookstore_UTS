@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Meylla Bookstore</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body class="login-page">
+  <main class="login-layout">
+    <section class="login-art">
+      <div class="brand brand-light"><span class="brand-icon">M</span><span>Meylla <b>Bookstore</b></span></div>
+      <div class="art-copy">
+        <span class="eyebrow">TEMUKAN CERITA BARUMU</span>
+        <h1>Satu buku,<br>seribu inspirasi.</h1>
+        <p>Temukan buku favorit dan pengalaman membaca yang menyenangkan.</p>
+        <div class="book-stack"><span>📘</span><span>📙</span><span>📗</span></div>
+      </div>
+      <small>Teman terbaik untuk setiap halaman kehidupan.</small>
+    </section>
+    <section class="login-panel">
+      <div class="login-card">
+        <div class="brand brand-dark"><span class="brand-icon">M</span><span>Meylla <b>Bookstore</b></span></div>
+        <span class="eyebrow">SELAMAT DATANG KEMBALI</span>
+        <h2>Masuk ke akun</h2>
+        <p class="muted">Silakan masuk untuk mulai menjelajahi koleksi buku.</p>
+        <form id="loginForm">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="nama@email.com" required>
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Masukkan password" required>
+          <button class="btn btn-primary full" type="submit">Login <span>→</span></button>
+        </form>
+        <div class="login-links"><button class="text-button" data-modal="forgotModal">Lupa Password?</button><span>Belum punya akun? <button class="text-button" data-modal="registerModal">Daftar</button></span></div>
+        <div class="demo-note">Akun demo: <b>admin@meylla.com</b> / <b>12345</b></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="forgotModal" aria-hidden="true"><div class="modal-box"><button class="modal-close" data-close>&times;</button><h3>Lupa Password</h3><p class="muted">Masukkan email akun. Petunjuk pemulihan akan ditampilkan.</p><form id="forgotForm"><label>Email</label><input type="email" required placeholder="nama@email.com"><button class="btn btn-primary full">Kirim</button></form></div></div>
+  <div class="modal" id="registerModal" aria-hidden="true"><div class="modal-box"><button class="modal-close" data-close>&times;</button><h3>Buat Akun Baru</h3><p class="muted">Pendaftaran demo untuk tampilan UTS.</p><form id="registerForm"><label>Nama</label><input required placeholder="Nama lengkap"><label>Email</label><input type="email" required placeholder="nama@email.com"><label>Password</label><input type="password" minlength="5" required placeholder="Minimal 5 karakter"><button class="btn btn-primary full">Daftar</button></form></div></div>
+</body>
+</html>
